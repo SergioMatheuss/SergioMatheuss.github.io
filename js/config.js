@@ -1,149 +1,67 @@
-/**
- * The default reveal.js config object.
- */
+
 export default {
 
-	// The "normal" size of the presentation, aspect ratio will be preserved
-	// when the presentation is scaled to fit different resolutions
 	width: 960,
 	height: 700,
 
-	// Factor of the display size that should remain empty around the content
 	margin: 0.04,
 
-	// Bounds for smallest/largest possible scale to apply to content
 	minScale: 0.2,
 	maxScale: 2.0,
 
-	// Display presentation control arrows
 	controls: true,
 
-	// Help the user learn the controls by providing hints, for example by
-	// bouncing the down arrow when they first encounter a vertical slide
 	controlsTutorial: true,
 
-	// Determines where controls appear, "edges" or "bottom-right"
 	controlsLayout: 'bottom-right',
 
-	// Visibility rule for backwards navigation arrows; "faded", "hidden"
-	// or "visible"
 	controlsBackArrows: 'faded',
 
-	// Display a presentation progress bar
+
 	progress: true,
 
-	// Display the page number of the current slide
-	// - true:    Show slide number
-	// - false:   Hide slide number
-	//
-	// Can optionally be set as a string that specifies the number formatting:
-	// - "h.v":	  Horizontal . vertical slide number (default)
-	// - "h/v":	  Horizontal / vertical slide number
-	// - "c":	  Flattened slide number
-	// - "c/t":	  Flattened slide number / total slides
-	//
-	// Alternatively, you can provide a function that returns the slide
-	// number for the current slide. The function should take in a slide
-	// object and return an array with one string [slideNumber] or
-	// three strings [n1,delimiter,n2]. See #formatSlideNumber().
 	slideNumber: false,
 
-	// Can be used to limit the contexts in which the slide number appears
-	// - "all":      Always show the slide number
-	// - "print":    Only when printing to PDF
-	// - "speaker":  Only in the speaker view
 	showSlideNumber: 'all',
 
-	// Use 1 based indexing for # links to match slide number (default is zero
-	// based)
 	hashOneBasedIndex: false,
 
-	// Add the current slide number to the URL hash so that reloading the
-	// page/copying the URL will return you to the same slide
 	hash: false,
 
-	// Flags if we should monitor the hash and change slides accordingly
 	respondToHashChanges: true,
 
-	// Push each slide change to the browser history.  Implies `hash: true`
 	history: false,
 
-	// Enable keyboard shortcuts for navigation
 	keyboard: true,
 
-	// Optional function that blocks keyboard events when retuning false
-	//
-	// If you set this to 'focused', we will only capture keyboard events
-	// for embedded decks when they are in focus
 	keyboardCondition: null,
 
-	// Disables the default reveal.js slide layout (scaling and centering)
-	// so that you can use custom CSS layout
 	disableLayout: false,
 
-	// Enable the slide overview mode
 	overview: true,
 
-	// Vertical centering of slides
 	center: true,
 
-	// Enables touch navigation on devices with touch input
 	touch: true,
 
-	// Loop the presentation
 	loop: false,
 
-	// Change the presentation direction to be RTL
 	rtl: false,
 
-	// Changes the behavior of our navigation directions.
-	//
-	// "default"
-	// Left/right arrow keys step between horizontal slides, up/down
-	// arrow keys step between vertical slides. Space key steps through
-	// all slides (both horizontal and vertical).
-	//
-	// "linear"
-	// Removes the up/down arrows. Left/right arrows step through all
-	// slides (both horizontal and vertical).
-	//
-	// "grid"
-	// When this is enabled, stepping left/right from a vertical stack
-	// to an adjacent vertical stack will land you at the same vertical
-	// index.
-	//
-	// Consider a deck with six slides ordered in two vertical stacks:
-	// 1.1    2.1
-	// 1.2    2.2
-	// 1.3    2.3
-	//
-	// If you're on slide 1.3 and navigate right, you will normally move
-	// from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
-	// from 1.3 -> 2.3.
 	navigationMode: 'default',
 
-	// Randomizes the order of slides each time the presentation loads
 	shuffle: false,
 
-	// Turns fragments on and off globally
 	fragments: true,
-
-	// Flags whether to include the current fragment in the URL,
-	// so that reloading brings you to the same fragment position
+	
 	fragmentInURL: true,
 
-	// Flags if the presentation is running in an embedded mode,
-	// i.e. contained within a limited portion of the screen
 	embedded: false,
 
-	// Flags if we should show a help overlay when the question-mark
-	// key is pressed
 	help: true,
 
-	// Flags if it should be possible to pause the presentation (blackout)
 	pause: true,
 
-	// Flags if speaker notes should be visible to all viewers
 	showNotes: false,
 
 	// Flags if slides with data-visibility="hidden" should be kep visible
